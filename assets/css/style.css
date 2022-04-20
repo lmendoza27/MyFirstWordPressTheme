@@ -1,0 +1,387 @@
+html {
+    overflow-x: hidden;
+    margin-top: 0px !important;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.4em;
+	color: #222;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; 
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+header {
+	width: 100%;
+	height: 100px;
+	background: #F0F8FF;
+	position: fixed;
+	z-index: 2;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}
+
+
+.header-computer {
+    display: block;
+}
+
+.header-mobile, .dashicons-menu {
+    display: none;
+}
+
+nav {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#nav-toggle{
+    text-decoration: none;
+    color: inherit;
+}
+
+.small {
+    height: 50px;
+  }
+  
+  .small .logo {
+      /*font-size: 2.6em;*/
+      font-size: 1em;
+      margin-top: 5px;
+  }
+
+.logo {
+
+    font-size: 2em;
+    float: left;
+    width: 380px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+ 
+}
+
+
+
+.opciones-menu li {
+   
+    display:inline;
+}
+
+.opciones-menu li a {
+    font-size: 1.5em;
+    margin-top: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.opciones-menu li a:hover {
+    color: rgb(167, 24, 24);
+    text-decoration: underline;
+}
+
+
+.contenido-post {
+    background: -webkit-linear-gradient(to right, #43c6ac, #191654); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #43c6ac, #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 auto;
+}
+
+.entry-title a{
+    color: inherit;
+    text-decoration: underline;
+    color: white !important;
+    
+}
+
+
+
+iframe {
+    width: 100%;
+}
+
+.entry-content {
+    background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    text-align: justify;
+    padding: 5px 20px;
+    border-radius: 20px;
+ 
+}
+
+article {
+    /*background-color: yellow;*/
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+header, .logo{
+	-webkit-transition: all 1s;
+          transition: all 1s; 
+}
+
+.section {
+	max-width: 100%; 
+	height: 42em;
+	padding: 10px;
+}
+
+.section h2 {
+	color: #fff;
+	font-size: 6em;
+	font-weight: 200;
+	text-align: center;
+	padding: 2.5em 0;
+}
+
+.one{
+	background: #6bb6ff;
+}
+
+.two{
+	background: #1E90FF;
+}
+
+.three{
+	background: #8B4789;
+}
+
+.four{
+	background: #872657;
+}
+
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: darkblue;
+    }
+
+    .footer > * {
+        flex:  1 100%;
+        }
+        
+        .l-footer {
+        margin-right: 1.25em;
+        margin-bottom: 2em;
+        }
+
+       footer h2 {
+font-weight: 400;
+font-size: 15px;
+}
+
+.footer ul {
+list-style: none;
+padding-left: 0;
+}
+
+.footer li {
+line-height: 2em;
+}
+
+.footer a {
+text-decoration: none;
+}
+
+.r-footer {
+display: flex;
+flex-flow: row wrap;
+}
+
+.r-footer > * {
+flex: 1 50%;
+margin-right: 1.25em;
+}
+
+.box a {
+color: #999;
+}
+
+.box a:hover {
+    color: white;
+}
+
+.h-box {
+column-count: 2;
+column-gap: 1.25em;
+}
+
+.b-footer {
+text-align: center;
+color: #999;
+padding-top: 50px;
+}
+
+.l-footer p {
+padding-right: 20%;
+color: #999;
+}   
+
+.tagcloud a,
+.wp-block-tag-cloud a {
+    font-size: 15px !important;
+    line-height: 2.5;
+    padding: 0px 15px;
+    color: #ffffff;
+    background-color: #d61523;
+	text-decoration: none;
+}
+
+.wp-block-tag-cloud a {
+    padding: 5px 15px;
+}
+
+
+@media screen and (min-width: 600px) {
+.r-footer > * {
+flex: 1;
+}
+
+.features {
+flex-grow: 2;
+}
+
+.l-footer {
+flex: 1 0px;
+}
+
+.r-footer {
+flex: 2 0px;
+}
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .dashicons-menu {
+        display: block;
+        position: absolute;
+        font-size: 50px;
+        left: 20px;
+        top: 25px;
+    }
+
+    .header-computer {
+        display:none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    header {
+       height: 100px !important;
+    }
+
+    .header-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        /*border-right: 2px solid #222;*/
+        /*transition: left .5s ease, top .5s ease;*/
+        transition: 2s;
+        /*background-color: red;*/
+        animation: lava 4s infinite;
+    }
+
+    @keyframes lava {
+        /*from {background-color:  #F0F8FF;}
+        to { background-color:  gold;}*/
+        from { background:linear-gradient(to right, #dd1818, #333333);}
+        to {  background: linear-gradient(to right, #f12711, #f5af19);}
+      }
+
+    .menu {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .show-nav {
+          left: 0;
+    }
+
+    .header-mobile ul{
+        list-style: none;
+        padding: 0;
+    }
+
+    .header-mobile li {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 700;
+        padding: 15px;
+    }
+
+    .header-mobile a {
+        color: inherit;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 1.2em;
+        color: white;
+    }
+
+    header {
+        height: 150px;
+        background: #F0F8FF;
+        position: fixed;
+        z-index: 2;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    }
+
+    .small {
+        height: 150px;
+      }
+      
+      .small .logo {
+          /*font-size: 2.6em;*/
+          font-size: 1em;
+          margin-top: 5px;
+      }
+
+      .opciones-menu {
+          display: block;
+      }
+
+      .contenido-post:nth-child(0) {
+
+        margin-top: 50px;
+      }
+
+      article {
+        /*background-color: yellow;*/
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
